@@ -75,8 +75,8 @@ class DDPGAgent {
         /*
             Restore the weights of the network
         */
-        const critic = await tf.loadModel('https://metacar-project.com/public/models/'+folder+'/critic-'+name+'.json');
-        const actor = await tf.loadModel("https://metacar-project.com/public/models/"+folder+"/actor-"+name+".json");
+        const critic = await tf.loadModel('https://metacar.rivolink.mg/public/models/'+folder+'/critic-'+name+'.json');
+        const actor = await tf.loadModel("https://metacar.rivolink.mg/public/models/"+folder+"/actor-"+name+".json");
 
         this.ddpg.critic = copyFromSave(critic, Critic, this.config, this.ddpg.obsInput, this.ddpg.actionInput);
         this.ddpg.actor = copyFromSave(actor, Actor, this.config, this.ddpg.obsInput, this.ddpg.actionInput);

@@ -33,7 +33,7 @@ env.load().then(() => {
     });
     env.addEvent("save", () => agent.save());
     env.addEvent("load", (content) => {
-        loadJSON("https://metacar-project.com/public/models/qtable/qtable.json", (content) => {
+        loadJSON("https://metacar.rivolink.mg/public/models/qtable/qtable.json", (content) => {
             agent.restore(content);    
             displayQTable("q_table", agent.stateList, agent, ["Top", "Left", "Right"]);
         });

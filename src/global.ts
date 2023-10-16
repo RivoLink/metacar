@@ -14,7 +14,7 @@ export const Container     = PIXI.Container;
 
 // Main server
 //export const URL = window.location.href.indexOf("localhost") == -1 ? "https://metacar-project.com/" : "http://localhost:3000/";
-export const URL = "https://metacar-project.com/";
+export const URL = "https://metacar.rivolink.mg/";
 
 // Textures files
 export const JSON_TEXTURES = URL + "public/textures/textures.json";
