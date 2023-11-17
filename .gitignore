@@ -1,6 +1,8 @@
 *.baseDir.ts*
 node_modules/*
 dist/dist-es6/*
+works/dist/dist-es6/*
+works/node_modules/
 demo/dist/dist-es6/*
 demo/node_modules/
 *package-lock.json*

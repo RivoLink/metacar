@@ -41,7 +41,18 @@ var demoConfig = Object.assign({}, config,{
         libraryExport: 'default'
     }
 });
+var worksConfig = Object.assign({}, config,{
+    output: {
+        filename: 'metacar.min.js',
+        path: path.resolve(__dirname, './works/dist'),
+        library: 'metacar',
+        libraryTarget: 'window',
+        libraryExport: 'default'
+    }
+});
 
 module.exports = [
-    packageConfig, demoConfig,    	
+    packageConfig,
+    worksConfig,
+    demoConfig,
 ];
